@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+   background: linear-gradient(90deg,#7b7b7b 50%,#1252 50%);
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.card{
+    background-color: #dddddd;
+    height: 90vh;
+    width: 90%;
+    border-radius: 20px;
+}
+.navbar{
+    display: flex;
+    /* background-color: yellow; */
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+}
+.navlist{
+    display: flex;
+}
+.navlist li{
+    list-style: none;
+    padding: 20px;;
+}
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+.navlist a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: .5s ease-in-out;
+}
+.navlist a:hover::before{
+    width: 100%;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px solid green;
+    border-radius: 50%;
+    border-right-color: aliceblue;
+    position: relative;
+}
+.logo::before{
+    content: "Devapro";
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    font-family: 'Dancing Script', cursive;
+}
+.hero{
+    /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.hero img{
+    width: 45vw;
+    padding-right: 20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 4px solid green;
+    padding: 20px 50px;
+}
+.content h3{
+    color: rgb(73, 73,73);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content h1{
+    color: #3c6555;
+    font-size: 50px;
+}
+.content p{
+    color: black;
+    font-size: 18px;
+    line-height: 30px;
+}
+.content button{
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: green;
+    cursor: pointer;
+
+}
+.content button:hover{
+    background-color: white;
+    color: green;
+}
+
+
+
+
+
+@media screen and(max-width: 796px) {
+    .navlist{
+        display: none;
+    }
+}
